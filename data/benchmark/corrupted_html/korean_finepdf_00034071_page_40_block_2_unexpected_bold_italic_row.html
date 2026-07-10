@@ -1,0 +1,34 @@
+<table>
+<tbody>
+<tr>
+<td style="font-weight: bold; font-style: italic">0x804840b <+0>:</td>
+<td style="font-weight: bold; font-style: italic">push</td>
+<td style="font-weight: bold; font-style: italic">%ebp</td>
+<td style="font-weight: bold; font-style: italic"># ebp를 스택에 저장한다.</td>
+</tr>
+<tr>
+<td>0x804840c <+1>:</td>
+<td>mov</td>
+<td>%esp,%ebp</td>
+<td># ebp를 업데이트한다(새로운 스택 프레임).</td>
+</tr>
+<tr>
+<td>0x804840e <+3>:</td>
+<td>sub</td>
+<td>$0x10,%esp</td>
+<td># 스택 프레임에 16 bytes를 더한다.</td>
+</tr>
+<tr>
+<td>0x8048411 <+6>:</td>
+<td>movl</td>
+<td>$0x0,-0x8(%ebp)</td>
+<td># 0을 ebp-0x8에 넣는다(total).</td>
+</tr>
+<tr>
+<td>0x8048418 <+13>:</td>
+<td>movl</td>
+<td>$0x1,-0x4(%ebp)</td>
+<td># 1을 ebp-0x4에 넣는다(i).</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,119 @@
+<table>
+<thead>
+<tr>
+<th>Tag</th>
+<th>Field Name</th>
+<th>Req'd</th>
+<th>Data Type</th>
+<th colspan="2">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6"><<i>Header with MsgType='R' /></i></td>
+</tr>
+<tr>
+<td colspan="6"><<i>QuoteReqGrp>, cardinality: 1, record counter: NoRelatedSym (146)</i></td>
+</tr>
+<tr>
+<td colspan="2"><<i>Instrument></i></td>
+<td>Y</td>
+<td colspan="3"></td>
+</tr>
+<tr>
+<td>55</td>
+<td>Symbol</td>
+<td>Y</td>
+<td>STRING (1-10)</td>
+<td colspan="2">T7 product identifier. Cash only: Field must bet set to '[N/A]' in FIX requests where the ISIN is used as instrument identifier.</td>
+</tr>
+<tr>
+<td>48</td>
+<td>SecurityID</td>
+<td>N</td>
+<td>INT(20)</td>
+<td colspan="2">T7 instrument identifier.</td>
+</tr>
+<tr>
+<td rowspan="3">22</td>
+<td rowspan="3">SecurityIDSource</td>
+<td rowspan="3">N</td>
+<td rowspan="3">STRING (1)</td>
+<td colspan="2">Source of the securityID</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Marketplace-assigned identi- fier</td>
+</tr>
+<tr>
+<td colspan="6"><<i>SecurityAltIDGrp>, cardinality: 0-1, record counter: NoSecurityAltID (454)</i></td>
+</tr>
+<tr>
+<td>455</td>
+<td>>SecurityAltID</td>
+<td>Y</td>
+<td>STRING (12)</td>
+<td colspan="2">Security identifier as ISIN</td>
+</tr>
+<tr>
+<td rowspan="3">456</td>
+<td rowspan="3">>SecurityAltIDSource</td>
+<td rowspan="3">Y</td>
+<td rowspan="3">STRING (1)</td>
+<td colspan="2">Source of the SecurityAltID (455). Only ISIN is allowed.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>4</td>
+<td>ISIN</td>
+</tr>
+<tr>
+<td colspan="6"></<i>SecurityAltIDGrp></i></td>
+</tr>
+<tr>
+<td>223</td>
+<td>CouponRate</td>
+<td>N</td>
+<td>PERCENTAGE</td>
+<td colspan="2">The rate of interest that, when multiplied by the principal, par value, or face value of a bond, pro- vides the currency amount of the periodic inter- est payment. The coupon is always cited, along with maturity, in any quotation of a bond's price.</td>
+</tr>
+<tr>
+<td rowspan="7">28890</td>
+<td rowspan="7">DeliveryType</td>
+<td rowspan="7">N</td>
+<td rowspan="7">INT</td>
+<td colspan="2">Identifies type of settlement.</td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Auslandskassenverein (AKV)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Girosammelverwahrung (GS)</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Streifbandverwahrung (STR)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Wertpapierrechnung (WPR)</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Non-collective safe custody securities to be settled via T2S (AKT)</td>
+</tr>
+</tbody>
+</table>

@@ -1,0 +1,58 @@
+{
+  "gpt-5.4": {
+    "input": 2.5,
+    "cached_input": 0.25,
+    "cache_write_input": null,
+    "output": 15.0,
+    "source_url": "https://developers.openai.com/api/docs/pricing"
+  },
+  "gpt-5.5": {
+    "input": 5.0,
+    "cached_input": 0.5,
+    "cache_write_input": null,
+    "output": 30.0,
+    "source_url": "https://developers.openai.com/api/docs/pricing"
+  },
+  "gpt-5.6-sol": {
+    "input": 5.0,
+    "cached_input": 0.5,
+    "cache_write_input": 6.25,
+    "output": 30.0,
+    "source_url": "https://developers.openai.com/api/docs/pricing"
+  },
+  "gpt-5.6-terra": {
+    "input": 2.5,
+    "cached_input": 0.25,
+    "cache_write_input": 3.125,
+    "output": 15.0,
+    "source_url": "https://developers.openai.com/api/docs/pricing"
+  },
+  "gpt-5.6-luna": {
+    "input": 1.0,
+    "cached_input": 0.1,
+    "cache_write_input": 1.25,
+    "output": 6.0,
+    "source_url": "https://developers.openai.com/api/docs/pricing"
+  },
+  "claude-opus-4-7": {
+    "input": 5.0,
+    "cached_input": 0.5,
+    "cache_write_input": 6.25,
+    "output": 25.0,
+    "source_url": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  "claude-opus-4-8": {
+    "input": 5.0,
+    "cached_input": 0.5,
+    "cache_write_input": 6.25,
+    "output": 25.0,
+    "source_url": "https://platform.claude.com/docs/en/about-claude/pricing"
+  },
+  "gemini-3.1-pro-preview": {
+    "input": 2.0,
+    "cached_input": 0.2,
+    "cache_write_input": 2.0,
+    "output": 12.0,
+    "source_url": "https://ai.google.dev/gemini-api/docs/pricing"
+  }
+}
