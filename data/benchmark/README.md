@@ -1,3 +1,11 @@
+---
+pretty_name: Table Judge Benchmark
+task_categories:
+  - image-to-text
+size_categories:
+  - n<1K
+---
+
 # Benchmark design
 
 The benchmark contains 538 paired clean/corrupted examples:
